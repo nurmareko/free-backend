@@ -142,7 +142,7 @@ export default function Page() {
         </section>
 
         <footer className="footer">
-          free · {year} · <a href="https://github.com/nurmareko">github.com/nurmareko</a>
+          · · · <a href="https://github.com/nurmareko">github.com/nurmareko</a> · · ·
         </footer>
       </div>
     </main>

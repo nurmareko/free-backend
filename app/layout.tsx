@@ -299,7 +299,7 @@ export default function RootLayout({
           .footer {
             margin-top: 34px;
             color: var(--muted);
-            font-size: 12px;
+            font-size: 14px;
             line-height: 1.35;
             text-align: center;
           }
