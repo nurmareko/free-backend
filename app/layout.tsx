@@ -88,7 +88,7 @@ export default function RootLayout({
 
           .frame {
             border: 1px solid var(--line);
-            background: rgba(10, 10, 10, 0.88);
+            background: rgba(10, 10, 10, 0.52);
             padding: 24px;
           }
 
@@ -181,7 +181,7 @@ export default function RootLayout({
             align-items: center;
             border: 1px solid var(--line);
             border-radius: 0;
-            background: #0d0d0d;
+            background: rgba(13, 13, 13, 0.56);
             color: var(--fg);
             line-height: 1;
           }
@@ -241,7 +241,7 @@ export default function RootLayout({
           .status-row,
           .code-block {
             border: 1px solid var(--line);
-            background: #0d0d0d;
+            background: rgba(13, 13, 13, 0.56);
             border-radius: 0;
           }
 

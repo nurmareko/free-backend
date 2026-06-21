@@ -1,6 +1,3 @@
-const liveUrl = "https://free-backend-neon.vercel.app/";
-const baseUrl = "https://free-backend-neon.vercel.app/api";
-
 const endpoints = [
   {
     method: "GET",
@@ -53,38 +50,6 @@ const multipartFields = [
   ["contactInfo", "string", "Required on create. Optional on update."],
   ["image", "file", "Required on create. Optional on update."],
 ];
-
-const statusCodes = [
-  ["200", "Request succeeded."],
-  ["201", "Item created."],
-  ["400", "Invalid request, such as a missing required multipart field."],
-  ["401", "Missing, invalid, or unverifiable bearer token."],
-  ["403", "Authenticated caller is not allowed to modify the item."],
-  ["404", "Item not found."],
-  ["500", "Server error."],
-];
-
-const itemShape = `{
-  "id": "string",
-  "title": "string",
-  "description": "string",
-  "location": "string",
-  "contactInfo": "string",
-  "imageUrl": "string",
-  "ownerId": "string",
-  "ownerName": "string",
-  "ownerEmail": "string",
-  "createdAt": "string",
-  "updatedAt": "string"
-}`;
-
-const curlExample = `curl -X POST "https://https://free-backend-neon.vercel.app//api/items" \\
-  -H "Authorization: Bearer PLACEHOLDER_GOOGLE_ID_TOKEN" \\
-  -F "title=Desk lamp" \\
-  -F "description=Working lamp, free to a good home." \\
-  -F "location=Downtown" \\
-  -F "contactInfo=owner@example.com" \\
-  -F "image=@./lamp.jpg"`;
 
 export default function Page() {
   const year = new Date().getFullYear();
@@ -142,7 +107,7 @@ export default function Page() {
         </section>
 
         <footer className="footer">
-          · · · <a href="https://github.com/nurmareko">github.com/nurmareko</a> · · ·
+          <a href="https://github.com/nurmareko">github.com/nurmareko</a>
         </footer>
       </div>
     </main>
